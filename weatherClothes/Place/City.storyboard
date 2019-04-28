@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r8j-Cr-xFN">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--City View Controller-->
+        <scene sceneID="cm7-br-A6k">
+            <objects>
+                <viewController id="r8j-Cr-xFN" customClass="CityViewController" customModule="weatherClothes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q2R-wx-5aj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Eox-T8-l5P">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCell" id="eXA-35-tKx">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eXA-35-tKx" id="Av5-1p-nNJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="8FM-3N-iJk" kind="show" id="rA5-d3-hj7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="r8j-Cr-xFN" id="M2T-Cg-7wc"/>
+                                    <outlet property="delegate" destination="r8j-Cr-xFN" id="WfC-0l-RBk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Eox-T8-l5P" firstAttribute="leading" secondItem="pnP-x1-ijq" secondAttribute="leading" id="5zf-tZ-qUV"/>
+                            <constraint firstItem="pnP-x1-ijq" firstAttribute="trailing" secondItem="Eox-T8-l5P" secondAttribute="trailing" id="Eve-WR-6wd"/>
+                            <constraint firstItem="pnP-x1-ijq" firstAttribute="bottom" secondItem="Eox-T8-l5P" secondAttribute="bottom" id="V1e-lY-pqj"/>
+                            <constraint firstItem="Eox-T8-l5P" firstAttribute="top" secondItem="pnP-x1-ijq" secondAttribute="top" id="x48-BH-B1y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pnP-x1-ijq"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Eox-T8-l5P" id="ZMP-Xx-RyE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gsh-cf-eBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="107" y="89"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="DiN-X3-8Ud">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ViewController" storyboardName="Main" id="8FM-3N-iJk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCB-dE-IbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="769" y="67"/>
+        </scene>
+    </scenes>
+</document>
