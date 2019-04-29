@@ -40,7 +40,6 @@ class PlaceViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 押されたときのcellのlabelの文字列をViewControllerに渡したいので、一旦、giveDataに入れとく
         giveData = place[indexPath.row]
-        self.present(PrefectureViewController(), animated: true, completion: nil)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "Segue" {
