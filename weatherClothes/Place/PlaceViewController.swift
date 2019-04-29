@@ -7,15 +7,16 @@
 //
 import UIKit
 
-class PlaceViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
+class PlaceViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet private weak var tableView: UITableView!
     let place = ["北海道・東北", "関東", "中部", "関西", "中国・四国","九州・沖縄"]
+    var giveData: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        self.navigationItem.title = "地方を選べ"
+        self.navigationItem.title = "エリアから探す"
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
@@ -37,5 +38,16 @@ class PlaceViewController: UIViewController,UITableViewDelegate, UITableViewData
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // 押されたときのcellのlabelの文字列をViewControllerに渡したいので、一旦、giveDataに入れとく
+        giveData = place[indexPath.row]
+        self.present(PrefectureViewController(), animated: true, completion: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Segue" {
+            let vc = segue.destination as! PrefectureViewController
+            vc.receiveData = giveData
+            print("あああああ")
+            print(giveData)
+        }
     }
 }

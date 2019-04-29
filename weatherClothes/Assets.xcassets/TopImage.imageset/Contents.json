@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "sst-paperplane.png",
+      "filename" : "top_image@1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "top_image@2x.png",
       "scale" : "2x"
     },
     {

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		806B32F82275F5EF003DAD64 /* Re.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806B32F72275F5EF003DAD64 /* Re.storyboard */; };
 		806B32FA2275F601003DAD64 /* ReViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B32F92275F601003DAD64 /* ReViewController.swift */; };
+		806B32FC2276CDDC003DAD64 /* CALayer+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B32FB2276CDDC003DAD64 /* CALayer+UIColor.swift */; };
 		809525EC22756A0700DB65BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809525EB22756A0700DB65BC /* AppDelegate.swift */; };
 		809525EE22756A0700DB65BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809525ED22756A0700DB65BC /* ViewController.swift */; };
 		809525F122756A0700DB65BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809525EF22756A0700DB65BC /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		806B32F72275F5EF003DAD64 /* Re.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Re.storyboard; sourceTree = "<group>"; };
 		806B32F92275F601003DAD64 /* ReViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReViewController.swift; sourceTree = "<group>"; };
+		806B32FB2276CDDC003DAD64 /* CALayer+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+UIColor.swift"; sourceTree = "<group>"; };
 		809525E822756A0700DB65BC /* weatherClothes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherClothes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		809525EB22756A0700DB65BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		809525ED22756A0700DB65BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				809525F222756A0A00DB65BC /* Assets.xcassets */,
 				809525F422756A0A00DB65BC /* LaunchScreen.storyboard */,
 				809525F722756A0A00DB65BC /* Info.plist */,
+				806B32FB2276CDDC003DAD64 /* CALayer+UIColor.swift */,
 			);
 			path = weatherClothes;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80AC891D227582320044D62E /* PlaceViewController.swift in Sources */,
+				806B32FC2276CDDC003DAD64 /* CALayer+UIColor.swift in Sources */,
 				80AC89252275B0730044D62E /* CityViewController.swift in Sources */,
 				80AC89212275B01C0044D62E /* PrefectureViewController.swift in Sources */,
 				806B32FA2275F601003DAD64 /* ReViewController.swift in Sources */,

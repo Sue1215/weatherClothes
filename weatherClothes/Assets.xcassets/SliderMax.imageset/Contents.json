@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "ssc-sun.png",
+      "filename" : "slider_hot_oval@1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "slider_hot_oval@2x.png",
       "scale" : "2x"
     },
     {

@@ -18,47 +18,98 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shV-EG-Qak">
-                                <rect key="frame" x="78" y="737" width="258" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="search!!!"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shV-EG-Qak">
+                                <rect key="frame" x="72" y="712" width="270" height="55"/>
+                                <color key="backgroundColor" red="0.0039215686274509803" green="0.42745098039215684" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="HqF-hM-TS6"/>
+                                    <constraint firstAttribute="height" constant="55" id="Qgs-nY-5Zo"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="結果を見る">
+                                            <attributes>
+                                                <font key="NSFont" size="22" name="HiraginoSans-W6"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                        <color key="value" red="0.30108057360000001" green="0.56900758340000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="3M4-WT-Hme" kind="show" id="Sal-0q-Wp9"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="qGa-ZX-mpA">
-                                <rect key="frame" x="78" y="140" width="258" height="217"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TopImage" translatesAutoresizingMaskIntoConstraints="NO" id="qGa-ZX-mpA">
+                                <rect key="frame" x="72" y="138" width="270" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="Fbp-c8-t8f"/>
+                                    <constraint firstAttribute="height" constant="270" id="Hm0-qk-qSr"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLu-u6-Jqw">
-                                <rect key="frame" x="78" y="484" width="258" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="place"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zLu-u6-Jqw">
+                                <rect key="frame" x="77" y="498" width="260" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="uDh-1o-34L"/>
+                                    <constraint firstAttribute="height" constant="45" id="vzy-Xi-weO"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0039215686269999999" green="0.42745098040000001" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="場所を探す">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="HiraginoSans-W3"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                        <color key="value" red="0.30108057360000001" green="0.56900758340000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="Hep-mq-zBB" kind="show" id="ZRD-gi-IOW"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LVC-rw-RNX">
-                                <rect key="frame" x="76" y="615" width="262" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="minimumTrackTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="maximumTrackTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="SliderMin" maximumValueImage="SliderMax" translatesAutoresizingMaskIntoConstraints="NO" id="LVC-rw-RNX">
+                                <rect key="frame" x="75" y="597" width="264" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="TtT-0h-ssn"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qGa-ZX-mpA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0HQ-xE-4xb"/>
+                            <constraint firstItem="shV-EG-Qak" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1WW-wO-YWn"/>
+                            <constraint firstItem="LVC-rw-RNX" firstAttribute="top" secondItem="zLu-u6-Jqw" secondAttribute="bottom" constant="54" id="Axi-Fz-1gt"/>
+                            <constraint firstItem="zLu-u6-Jqw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I2I-WG-QoU"/>
+                            <constraint firstItem="zLu-u6-Jqw" firstAttribute="top" secondItem="qGa-ZX-mpA" secondAttribute="bottom" constant="90" id="I8L-Zu-ouE"/>
+                            <constraint firstItem="LVC-rw-RNX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IeC-Mb-17P"/>
+                            <constraint firstItem="qGa-ZX-mpA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="O1H-Mc-rEP"/>
+                            <constraint firstItem="shV-EG-Qak" firstAttribute="top" secondItem="LVC-rw-RNX" secondAttribute="bottom" constant="85" id="cLB-2p-GtK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="oxh-Wn-T3J"/>
@@ -108,6 +159,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="180" height="180"/>
+        <image name="SliderMax" width="22" height="22"/>
+        <image name="SliderMin" width="22" height="22"/>
+        <image name="TopImage" width="264" height="268"/>
     </resources>
 </document>
