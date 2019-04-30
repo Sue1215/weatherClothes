@@ -1,5 +1,5 @@
 //
-//  PlaceViewController.swift
+//  PrefectureViewController.swift
 //  weatherClothes
 //
 //  Created by sue on 2019/04/28.
@@ -7,15 +7,15 @@
 //
 import UIKit
 
-class PlaceViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class PrefectureViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     @IBOutlet private weak var tableView: UITableView!
-    let place = ["北海道・東北", "関東", "中部", "関西", "中国・四国","九州・沖縄"]
+    var prefecture = ["東京都", "神奈川県", "千葉県", "埼玉県", "栃木県","茨城県"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        self.navigationItem.title = "エリアから探す"
+        self.navigationItem.title = "都道府県から探す"
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         tableView.tableFooterView = UIView(frame: .zero)
     }
@@ -24,19 +24,19 @@ class PlaceViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.didReceiveMemoryWarning()
     }
     
-    //セルの個数を指定
+    //    //セルの個数を指定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return place.count
+        return prefecture.count
     }
     
     //セルに値を設定
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // セルを取得
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "placeCell", for: indexPath)
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "PrefectureCell", for: indexPath)
         // セルに表示する値を設定する
-        cell.textLabel!.text = place[indexPath.row]
-        if indexPath.row == 0 {
-        // セルの選択不可にする
+        cell.textLabel!.text = prefecture[indexPath.row]
+        if indexPath.row == 1 {
+            // セルの選択不可にする
             cell.selectionStyle = .none
         } else if indexPath.row == 2 {
             cell.selectionStyle = .none
@@ -53,10 +53,10 @@ class PlaceViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         switch indexPath.row {
-        case 1:
+        case 0:
             return indexPath
         // 選択不可にしたい場合は"nil"を返す
-        case 0:
+        case 1:
             return nil
         case 2:
             return nil
@@ -73,6 +73,5 @@ class PlaceViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    }
 }
+

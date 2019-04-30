@@ -29,6 +29,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="YVS-o2-LEY" kind="show" identifier="Segue" id="59l-E2-NVC"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -53,6 +56,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XXt-2w-hln" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3" y="28"/>
+        </scene>
+        <!--Prefecture-->
+        <scene sceneID="2bn-hy-Zlf">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="PrefectureViewController" storyboardName="Prefecture" id="YVS-o2-LEY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKF-BK-0pF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811" y="-24"/>
         </scene>
     </scenes>
 </document>

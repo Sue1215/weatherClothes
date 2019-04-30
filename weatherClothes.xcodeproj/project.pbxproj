@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		806B32F82275F5EF003DAD64 /* Re.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806B32F72275F5EF003DAD64 /* Re.storyboard */; };
+		806B32FA2275F601003DAD64 /* ReViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B32F92275F601003DAD64 /* ReViewController.swift */; };
+		806B32FC2276CDDC003DAD64 /* CALayer+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B32FB2276CDDC003DAD64 /* CALayer+UIColor.swift */; };
 		809525EC22756A0700DB65BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809525EB22756A0700DB65BC /* AppDelegate.swift */; };
 		809525EE22756A0700DB65BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809525ED22756A0700DB65BC /* ViewController.swift */; };
 		809525F122756A0700DB65BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809525EF22756A0700DB65BC /* Main.storyboard */; };
@@ -14,9 +17,16 @@
 		809525F622756A0A00DB65BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809525F422756A0A00DB65BC /* LaunchScreen.storyboard */; };
 		80AC891B2275813C0044D62E /* Place.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AC891A2275813C0044D62E /* Place.storyboard */; };
 		80AC891D227582320044D62E /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC891C227582320044D62E /* PlaceViewController.swift */; };
+		80AC891F2275AFD00044D62E /* Prefecture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AC891E2275AFD00044D62E /* Prefecture.storyboard */; };
+		80AC89212275B01C0044D62E /* PrefectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC89202275B01C0044D62E /* PrefectureViewController.swift */; };
+		80AC89232275B0620044D62E /* City.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AC89222275B0620044D62E /* City.storyboard */; };
+		80AC89252275B0730044D62E /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC89242275B0730044D62E /* CityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		806B32F72275F5EF003DAD64 /* Re.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Re.storyboard; sourceTree = "<group>"; };
+		806B32F92275F601003DAD64 /* ReViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReViewController.swift; sourceTree = "<group>"; };
+		806B32FB2276CDDC003DAD64 /* CALayer+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+UIColor.swift"; sourceTree = "<group>"; };
 		809525E822756A0700DB65BC /* weatherClothes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherClothes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		809525EB22756A0700DB65BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		809525ED22756A0700DB65BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +36,10 @@
 		809525F722756A0A00DB65BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80AC891A2275813C0044D62E /* Place.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Place.storyboard; sourceTree = "<group>"; };
 		80AC891C227582320044D62E /* PlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
+		80AC891E2275AFD00044D62E /* Prefecture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Prefecture.storyboard; sourceTree = "<group>"; };
+		80AC89202275B01C0044D62E /* PrefectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureViewController.swift; sourceTree = "<group>"; };
+		80AC89222275B0620044D62E /* City.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = City.storyboard; sourceTree = "<group>"; };
+		80AC89242275B0730044D62E /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +79,7 @@
 				809525F222756A0A00DB65BC /* Assets.xcassets */,
 				809525F422756A0A00DB65BC /* LaunchScreen.storyboard */,
 				809525F722756A0A00DB65BC /* Info.plist */,
+				806B32FB2276CDDC003DAD64 /* CALayer+UIColor.swift */,
 			);
 			path = weatherClothes;
 			sourceTree = "<group>";
@@ -81,6 +96,8 @@
 		809526002275712600DB65BC /* Result */ = {
 			isa = PBXGroup;
 			children = (
+				806B32F72275F5EF003DAD64 /* Re.storyboard */,
+				806B32F92275F601003DAD64 /* ReViewController.swift */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -90,6 +107,10 @@
 			children = (
 				80AC891A2275813C0044D62E /* Place.storyboard */,
 				80AC891C227582320044D62E /* PlaceViewController.swift */,
+				80AC891E2275AFD00044D62E /* Prefecture.storyboard */,
+				80AC89202275B01C0044D62E /* PrefectureViewController.swift */,
+				80AC89222275B0620044D62E /* City.storyboard */,
+				80AC89242275B0730044D62E /* CityViewController.swift */,
 			);
 			path = Place;
 			sourceTree = "<group>";
@@ -152,8 +173,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80AC891F2275AFD00044D62E /* Prefecture.storyboard in Resources */,
+				806B32F82275F5EF003DAD64 /* Re.storyboard in Resources */,
 				80AC891B2275813C0044D62E /* Place.storyboard in Resources */,
 				809525F622756A0A00DB65BC /* LaunchScreen.storyboard in Resources */,
+				80AC89232275B0620044D62E /* City.storyboard in Resources */,
 				809525F322756A0A00DB65BC /* Assets.xcassets in Resources */,
 				809525F122756A0700DB65BC /* Main.storyboard in Resources */,
 			);
@@ -167,6 +191,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				80AC891D227582320044D62E /* PlaceViewController.swift in Sources */,
+				806B32FC2276CDDC003DAD64 /* CALayer+UIColor.swift in Sources */,
+				80AC89252275B0730044D62E /* CityViewController.swift in Sources */,
+				80AC89212275B01C0044D62E /* PrefectureViewController.swift in Sources */,
+				806B32FA2275F601003DAD64 /* ReViewController.swift in Sources */,
 				809525EE22756A0700DB65BC /* ViewController.swift in Sources */,
 				809525EC22756A0700DB65BC /* AppDelegate.swift in Sources */,
 			);

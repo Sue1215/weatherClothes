@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3ae-5D-uyK">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Prefecture View Controller-->
+        <scene sceneID="O21-A7-Laq">
+            <objects>
+                <viewController storyboardIdentifier="PrefectureViewController" id="3ae-5D-uyK" customClass="PrefectureViewController" customModule="weatherClothes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3di-cs-4qC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x5i-fw-4pj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PrefectureCell" id="KHp-uA-Ym4">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KHp-uA-Ym4" id="g6x-xd-i6H">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="qNM-Hw-1M9" kind="show" id="X3d-dj-BiS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3ae-5D-uyK" id="YkZ-NN-t5k"/>
+                                    <outlet property="delegate" destination="3ae-5D-uyK" id="CpQ-aa-maE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="x5i-fw-4pj" firstAttribute="top" secondItem="skA-Rj-wXR" secondAttribute="top" id="EPU-ra-avo"/>
+                            <constraint firstItem="x5i-fw-4pj" firstAttribute="leading" secondItem="skA-Rj-wXR" secondAttribute="leading" id="Ppj-B5-CxU"/>
+                            <constraint firstItem="skA-Rj-wXR" firstAttribute="trailing" secondItem="x5i-fw-4pj" secondAttribute="trailing" id="ako-UV-UYh"/>
+                            <constraint firstItem="skA-Rj-wXR" firstAttribute="bottom" secondItem="x5i-fw-4pj" secondAttribute="bottom" id="uVr-0F-IFD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="skA-Rj-wXR"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="x5i-fw-4pj" id="a0G-WY-Jtm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GIw-ag-PZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="92"/>
+        </scene>
+        <!--City-->
+        <scene sceneID="Zg8-mZ-XHu">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="CityViewController" storyboardName="City" id="qNM-Hw-1M9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yw0-XF-HaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="91"/>
+        </scene>
+    </scenes>
+</document>
