@@ -49,9 +49,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShW-Vt-AgH">
-                                <rect key="frame" x="125" y="168" width="51" height="17"/>
+                                <rect key="frame" x="125" y="168" width="68" height="17"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="文京区">
+                                    <fragment content="千代田区">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="17" name="HiraginoSans-W3"/>
@@ -105,9 +105,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAI-t8-WyE">
-                                <rect key="frame" x="0.0" y="144" width="175" height="16"/>
+                                <rect key="frame" x="0.0" y="144" width="191" height="16"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="＿＿＿＿＿＿＿＿＿＿＿">
+                                    <fragment content="＿＿＿＿＿＿＿＿＿＿＿＿">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.2901960784" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="17" name=".HiraKakuInterface-W3"/>
@@ -207,6 +207,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JM7-6u-1pF"/>
                     </view>
+                    <connections>
+                        <outlet property="todayLabel" destination="vt3-Lx-XM8" id="rSo-IX-JCn"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="105.79710144927537" y="115.84821428571428"/>

@@ -8,6 +8,7 @@
 import UIKit
 
 class ReViewController: UIViewController {
+    @IBOutlet weak var todayLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

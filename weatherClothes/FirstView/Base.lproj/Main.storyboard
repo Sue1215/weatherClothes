@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shV-EG-Qak">
-                                <rect key="frame" x="72" y="712" width="270" height="55"/>
+                                <rect key="frame" x="72" y="747" width="270" height="55"/>
                                 <color key="backgroundColor" red="0.0039215686274509803" green="0.42745098039215684" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="HqF-hM-TS6"/>
@@ -30,6 +30,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="結果を見る">
                                             <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="22" name="HiraginoSans-W6"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
@@ -51,15 +52,8 @@
                                     <segue destination="3M4-WT-Hme" kind="show" id="Sal-0q-Wp9"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TopImage" translatesAutoresizingMaskIntoConstraints="NO" id="qGa-ZX-mpA">
-                                <rect key="frame" x="72" y="138" width="270" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="270" id="Fbp-c8-t8f"/>
-                                    <constraint firstAttribute="height" constant="270" id="Hm0-qk-qSr"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zLu-u6-Jqw">
-                                <rect key="frame" x="77" y="498" width="260" height="45"/>
+                                <rect key="frame" x="77" y="533" width="260" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="uDh-1o-34L"/>
                                     <constraint firstAttribute="height" constant="45" id="vzy-Xi-weO"/>
@@ -91,7 +85,7 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LVC-rw-RNX">
-                                <rect key="frame" x="75" y="597" width="264" height="31"/>
+                                <rect key="frame" x="75" y="632" width="264" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="TtT-0h-ssn"/>
                                 </constraints>
@@ -100,21 +94,21 @@
                                 <color key="thumbTintColor" red="1" green="0.96055603229999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </slider>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SliderMax" translatesAutoresizingMaskIntoConstraints="NO" id="Dfc-Ze-0MI">
-                                <rect key="frame" x="337" y="602" width="20" height="20"/>
+                                <rect key="frame" x="337" y="637" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="87j-oP-s5K"/>
                                     <constraint firstAttribute="height" constant="20" id="All-Dr-IJ6"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SliderMin" translatesAutoresizingMaskIntoConstraints="NO" id="CXp-IV-ENq">
-                                <rect key="frame" x="57" y="602" width="20" height="20"/>
+                                <rect key="frame" x="57" y="637" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="7d1-oz-U9J"/>
                                     <constraint firstAttribute="height" constant="20" id="XJo-xQ-UVe"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Keb-X4-JUD">
-                                <rect key="frame" x="46" y="655" width="42" height="14"/>
+                                <rect key="frame" x="46" y="690" width="42" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="DbQ-Aq-Nud"/>
                                     <constraint firstAttribute="height" constant="14" id="XAJ-0y-pev"/>
@@ -131,7 +125,7 @@
                                 <color key="highlightedColor" red="0.0" green="0.25098039220000001" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZv-yV-VuO">
-                                <rect key="frame" x="186" y="655" width="42" height="14"/>
+                                <rect key="frame" x="186" y="690" width="42" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="14" id="BGP-Q8-tqQ"/>
                                     <constraint firstAttribute="width" constant="42" id="d7f-ff-h7Q"/>
@@ -148,7 +142,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icy-gt-viN">
-                                <rect key="frame" x="326" y="655" width="42" height="14"/>
+                                <rect key="frame" x="326" y="690" width="42" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="RlZ-fr-iqV"/>
                                     <constraint firstAttribute="height" constant="14" id="SOa-6I-EuA"/>
@@ -164,17 +158,20 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TopImage" translatesAutoresizingMaskIntoConstraints="NO" id="qGa-ZX-mpA">
+                                <rect key="frame" x="72.5" y="231" width="269" height="268"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qGa-ZX-mpA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0HQ-xE-4xb"/>
+                            <constraint firstItem="qGa-ZX-mpA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Uu-go-qre"/>
                             <constraint firstItem="shV-EG-Qak" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1WW-wO-YWn"/>
                             <constraint firstItem="Keb-X4-JUD" firstAttribute="top" secondItem="LVC-rw-RNX" secondAttribute="bottom" constant="28" id="1c6-1E-muG"/>
                             <constraint firstItem="LVC-rw-RNX" firstAttribute="top" secondItem="zLu-u6-Jqw" secondAttribute="bottom" constant="54" id="Axi-Fz-1gt"/>
                             <constraint firstItem="zLu-u6-Jqw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I2I-WG-QoU"/>
-                            <constraint firstItem="zLu-u6-Jqw" firstAttribute="top" secondItem="qGa-ZX-mpA" secondAttribute="bottom" constant="90" id="I8L-Zu-ouE"/>
                             <constraint firstItem="LVC-rw-RNX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IeC-Mb-17P"/>
-                            <constraint firstItem="qGa-ZX-mpA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="O1H-Mc-rEP"/>
+                            <constraint firstItem="zLu-u6-Jqw" firstAttribute="top" secondItem="qGa-ZX-mpA" secondAttribute="bottom" constant="34" id="K15-tb-OOU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="shV-EG-Qak" secondAttribute="bottom" constant="60" id="MKs-jV-mjd"/>
                             <constraint firstItem="CZv-yV-VuO" firstAttribute="leading" secondItem="Keb-X4-JUD" secondAttribute="trailing" constant="98" id="OBZ-9s-tI4"/>
                             <constraint firstItem="CZv-yV-VuO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RRi-hy-7EU"/>
                             <constraint firstItem="CXp-IV-ENq" firstAttribute="top" secondItem="zLu-u6-Jqw" secondAttribute="bottom" constant="59" id="abM-gQ-PgZ"/>
@@ -237,6 +234,6 @@
     <resources>
         <image name="SliderMax" width="22" height="22"/>
         <image name="SliderMin" width="22" height="22"/>
-        <image name="TopImage" width="264" height="268"/>
+        <image name="TopImage" width="269" height="268"/>
     </resources>
 </document>
