@@ -38,7 +38,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
+                                        <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
                                         <color key="value" red="0.30108057360000001" green="0.56900758340000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -77,7 +77,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
+                                        <integer key="value" value="23"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
                                         <color key="value" red="0.30108057360000001" green="0.56900758340000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -90,25 +90,101 @@
                                     <segue destination="Hep-mq-zBB" kind="show" id="ZRD-gi-IOW"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="SliderMin" maximumValueImage="SliderMax" translatesAutoresizingMaskIntoConstraints="NO" id="LVC-rw-RNX">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LVC-rw-RNX">
                                 <rect key="frame" x="75" y="597" width="264" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="TtT-0h-ssn"/>
                                 </constraints>
                                 <color key="minimumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="thumbTintColor" red="1" green="0.96055603229999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </slider>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SliderMax" translatesAutoresizingMaskIntoConstraints="NO" id="Dfc-Ze-0MI">
+                                <rect key="frame" x="337" y="602" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="87j-oP-s5K"/>
+                                    <constraint firstAttribute="height" constant="20" id="All-Dr-IJ6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SliderMin" translatesAutoresizingMaskIntoConstraints="NO" id="CXp-IV-ENq">
+                                <rect key="frame" x="57" y="602" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="7d1-oz-U9J"/>
+                                    <constraint firstAttribute="height" constant="20" id="XJo-xQ-UVe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Keb-X4-JUD">
+                                <rect key="frame" x="46" y="655" width="42" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="DbQ-Aq-Nud"/>
+                                    <constraint firstAttribute="height" constant="14" id="XAJ-0y-pev"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="寒がり">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.25098039220000001" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.0" green="0.25098039220000001" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZv-yV-VuO">
+                                <rect key="frame" x="186" y="655" width="42" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="BGP-Q8-tqQ"/>
+                                    <constraint firstAttribute="width" constant="42" id="d7f-ff-h7Q"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="ふつう">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99942404029999998" green="0.46666666670000001" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icy-gt-viN">
+                                <rect key="frame" x="326" y="655" width="42" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="RlZ-fr-iqV"/>
+                                    <constraint firstAttribute="height" constant="14" id="SOa-6I-EuA"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="暑がり">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qGa-ZX-mpA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0HQ-xE-4xb"/>
                             <constraint firstItem="shV-EG-Qak" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1WW-wO-YWn"/>
+                            <constraint firstItem="Keb-X4-JUD" firstAttribute="top" secondItem="LVC-rw-RNX" secondAttribute="bottom" constant="28" id="1c6-1E-muG"/>
                             <constraint firstItem="LVC-rw-RNX" firstAttribute="top" secondItem="zLu-u6-Jqw" secondAttribute="bottom" constant="54" id="Axi-Fz-1gt"/>
                             <constraint firstItem="zLu-u6-Jqw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I2I-WG-QoU"/>
                             <constraint firstItem="zLu-u6-Jqw" firstAttribute="top" secondItem="qGa-ZX-mpA" secondAttribute="bottom" constant="90" id="I8L-Zu-ouE"/>
                             <constraint firstItem="LVC-rw-RNX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IeC-Mb-17P"/>
                             <constraint firstItem="qGa-ZX-mpA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="O1H-Mc-rEP"/>
+                            <constraint firstItem="CZv-yV-VuO" firstAttribute="leading" secondItem="Keb-X4-JUD" secondAttribute="trailing" constant="98" id="OBZ-9s-tI4"/>
+                            <constraint firstItem="CZv-yV-VuO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RRi-hy-7EU"/>
+                            <constraint firstItem="CXp-IV-ENq" firstAttribute="top" secondItem="zLu-u6-Jqw" secondAttribute="bottom" constant="59" id="abM-gQ-PgZ"/>
                             <constraint firstItem="shV-EG-Qak" firstAttribute="top" secondItem="LVC-rw-RNX" secondAttribute="bottom" constant="85" id="cLB-2p-GtK"/>
+                            <constraint firstItem="Dfc-Ze-0MI" firstAttribute="top" secondItem="zLu-u6-Jqw" secondAttribute="bottom" constant="59" id="fxJ-qG-TSu"/>
+                            <constraint firstItem="CZv-yV-VuO" firstAttribute="top" secondItem="LVC-rw-RNX" secondAttribute="bottom" constant="28" id="jg6-t7-3d9"/>
+                            <constraint firstItem="Dfc-Ze-0MI" firstAttribute="leading" secondItem="LVC-rw-RNX" secondAttribute="trailing" id="mYa-5p-5x2"/>
+                            <constraint firstItem="icy-gt-viN" firstAttribute="leading" secondItem="CZv-yV-VuO" secondAttribute="trailing" constant="98" id="rLs-b4-nCy"/>
+                            <constraint firstItem="icy-gt-viN" firstAttribute="top" secondItem="LVC-rw-RNX" secondAttribute="bottom" constant="28" id="v8c-B9-xMD"/>
+                            <constraint firstItem="LVC-rw-RNX" firstAttribute="leading" secondItem="CXp-IV-ENq" secondAttribute="trailing" id="yeu-0N-fYz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "top_image_new@1x.png",
+      "filename" : "fashion_16-19@1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "top_image_new@2x.png",
+      "filename" : "fashion_16-19@2x.png",
       "scale" : "2x"
     },
     {

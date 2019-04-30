@@ -17,6 +17,7 @@ class CityViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.dataSource = self
         self.navigationItem.title = "詳細地域から探す"
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        tableView.tableFooterView = UIView(frame: .zero)
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,6 +38,7 @@ class CityViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
 }
 

@@ -11,6 +11,7 @@ class ReViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "今日の服装"
     }
     
 }

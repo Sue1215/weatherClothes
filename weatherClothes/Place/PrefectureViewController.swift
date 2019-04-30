@@ -9,29 +9,22 @@ import UIKit
 
 class PrefectureViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     @IBOutlet private weak var tableView: UITableView!
-    var prefecture = [""]
-    var receiveData: String = ""
+    var prefecture = ["東京都", "神奈川県", "千葉県", "埼玉県", "栃木県","茨城県"]
     
-    let hokkaido = ["北海道", "青森", "秋田", "岩手"]
-    let kanto = ["東京都", "神奈川県", "千葉県", "埼玉県", "栃木県","茨城県"]
-    let chubu = ["ちゅーぶ"]
-    let kansai = ["大阪", "京都"]
-    let chugoku = ["中国", "四国"]
-    let kyusyu = ["福岡", "沖縄"]
-
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         self.navigationItem.title = "都道府県から探す"
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        tableView.tableFooterView = UIView(frame: .zero)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-//    //セルの個数を指定
+    //    //セルの個数を指定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return prefecture.count
     }
@@ -40,34 +33,44 @@ class PrefectureViewController: UIViewController,UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // セルを取得
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "PrefectureCell", for: indexPath)
-        if receiveData == "北海道・東北" {
-            prefecture = hokkaido
-            print("あああああ")
-            print(receiveData)
-        } else if receiveData == "関東"{
-            prefecture = kanto
-        } else if receiveData == "中部"{
-            prefecture = chubu
-        } else if receiveData == "関西"{
-            prefecture = kansai
-        } else if receiveData == "中国・四国"{
-            prefecture = chugoku
-        } else if receiveData == "九州・沖縄"{
-            prefecture = kyusyu
-        }
         // セルに表示する値を設定する
         cell.textLabel!.text = prefecture[indexPath.row]
-//        cell.textLabel!.text = receiveData
-        print("かかかか")
-        print(receiveData)
-        print("きききき")
-        print(prefecture)
+        if indexPath.row == 1 {
+            // セルの選択不可にする
+            cell.selectionStyle = .none
+        } else if indexPath.row == 2 {
+            cell.selectionStyle = .none
+        } else if indexPath.row == 3 {
+            cell.selectionStyle = .none
+        } else if indexPath.row == 4 {
+            cell.selectionStyle = .none
+        } else if indexPath.row == 5 {
+            cell.selectionStyle = .none
+        } else {
+            cell.selectionStyle = .default
+        }
         return cell
     }
-    //セルの個数を指定
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return prefecture.count
-//    }
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        switch indexPath.row {
+        case 0:
+            return indexPath
+        // 選択不可にしたい場合は"nil"を返す
+        case 1:
+            return nil
+        case 2:
+            return nil
+        case 3:
+            return nil
+        case 4:
+            return nil
+        case 5:
+            return nil
+            
+        default:
+            return indexPath
+        }
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     }
 }

@@ -13,46 +13,169 @@
         <!--Re View Controller-->
         <scene sceneID="xST-yB-jgT">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7TD-Zq-T9J" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="1hV-Oj-G4n" customClass="ReViewController" customModule="weatherClothes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KPu-p2-ijI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SliderMin" translatesAutoresizingMaskIntoConstraints="NO" id="rjf-En-0K4">
-                                <rect key="frame" x="65" y="316" width="284" height="264"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16-20Image" translatesAutoresizingMaskIntoConstraints="NO" id="rjf-En-0K4">
+                                <rect key="frame" x="67" y="243" width="280" height="273"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="nF2-iF-ymb"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyy-zv-mce">
-                                <rect key="frame" x="47" y="165" width="101" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rainIcon" translatesAutoresizingMaskIntoConstraints="NO" id="t9V-Qb-0pl">
+                                <rect key="frame" x="115.5" y="68" width="112" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="c0o-tU-nIJ"/>
+                                    <constraint firstAttribute="height" constant="112" id="lBc-w6-tLa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyy-zv-mce">
+                                <rect key="frame" x="28" y="68" width="72.5" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="d2R-Ku-7gk"/>
+                                </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="15℃">
+                                    <fragment content="16">
                                         <attributes>
-                                            <font key="NSFont" size="46" name=".AppleSystemUIFont"/>
+                                            <color key="NSColor" red="0.0" green="0.29019607843137252" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="65" name=".SFNSDisplay"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="文京区の天気" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShW-Vt-AgH">
-                                <rect key="frame" x="47" y="103" width="101" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShW-Vt-AgH">
+                                <rect key="frame" x="125" y="168" width="51" height="17"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="文京区">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1C-1m-2rR">
-                                <rect key="frame" x="47" y="652" width="319" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1C-1m-2rR">
+                                <rect key="frame" x="61" y="570" width="292" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="G83-Ik-zzb"/>
+                                    <constraint firstAttribute="height" constant="85" id="ZIJ-Ws-6oW"/>
+                                </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">いやー今日も寒いねー。
-testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</string>
+                                    <fragment content="少し肌寒い気温です。長袖だけでなく、薄手の羽織りものを持っておくと柔軟に対応できますよ！">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijb-sw-3Xl">
+                                <rect key="frame" x="31" y="535" width="352" height="22"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="ベストや薄手の羽織りものが大活躍">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="22" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQ7-ly-mXO">
+                                <rect key="frame" x="100.5" y="96" width="47" height="48"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="℃">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.2901960784" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="41" name=".SFNSDisplay"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAI-t8-WyE">
+                                <rect key="frame" x="0.0" y="144" width="175" height="16"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="＿＿＿＿＿＿＿＿＿＿＿">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.2901960784" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="17" name=".HiraKakuInterface-W3"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drZ-zd-rA4">
+                                <rect key="frame" x="80.5" y="168" width="29.5" height="17"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="(雨)">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.2901960784" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vt3-Lx-XM8">
+                                <rect key="frame" x="38.5" y="168" width="42" height="17"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="4/30">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.29020000000000001" blue="0.58823999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -60,15 +183,37 @@ testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="drZ-zd-rA4" firstAttribute="leading" secondItem="vt3-Lx-XM8" secondAttribute="trailing" id="1St-hW-LJq"/>
+                            <constraint firstItem="rjf-En-0K4" firstAttribute="centerX" secondItem="KPu-p2-ijI" secondAttribute="centerX" id="2qd-zg-MH6"/>
+                            <constraint firstItem="ijb-sw-3Xl" firstAttribute="centerX" secondItem="KPu-p2-ijI" secondAttribute="centerX" id="3Gr-cF-DVY"/>
+                            <constraint firstItem="rjf-En-0K4" firstAttribute="top" secondItem="ShW-Vt-AgH" secondAttribute="bottom" constant="58" id="6cc-xA-Kta"/>
+                            <constraint firstItem="ShW-Vt-AgH" firstAttribute="leading" secondItem="drZ-zd-rA4" secondAttribute="trailing" constant="15" id="Bsf-uk-PXx"/>
+                            <constraint firstItem="nAI-t8-WyE" firstAttribute="top" secondItem="kQ7-ly-mXO" secondAttribute="bottom" id="DMO-JK-Otb"/>
+                            <constraint firstItem="nAI-t8-WyE" firstAttribute="leading" secondItem="JM7-6u-1pF" secondAttribute="leading" id="E6c-gj-k7B"/>
+                            <constraint firstItem="rjf-En-0K4" firstAttribute="top" secondItem="drZ-zd-rA4" secondAttribute="bottom" constant="58" id="H5c-yQ-YSZ"/>
+                            <constraint firstItem="ShW-Vt-AgH" firstAttribute="leading" secondItem="JM7-6u-1pF" secondAttribute="leading" constant="125" id="HnC-Wk-ter"/>
+                            <constraint firstItem="nAI-t8-WyE" firstAttribute="top" secondItem="JM7-6u-1pF" secondAttribute="top" constant="100" id="QNT-NH-ojI"/>
+                            <constraint firstItem="kQ7-ly-mXO" firstAttribute="leading" secondItem="uyy-zv-mce" secondAttribute="trailing" id="Qby-B2-b6V"/>
+                            <constraint firstItem="v1C-1m-2rR" firstAttribute="centerX" secondItem="KPu-p2-ijI" secondAttribute="centerX" id="TpB-GD-AyR"/>
+                            <constraint firstItem="ShW-Vt-AgH" firstAttribute="top" secondItem="nAI-t8-WyE" secondAttribute="bottom" constant="8" id="gju-8G-NB6"/>
+                            <constraint firstItem="ijb-sw-3Xl" firstAttribute="top" secondItem="rjf-En-0K4" secondAttribute="bottom" constant="19" id="h9R-73-dSN"/>
+                            <constraint firstItem="rjf-En-0K4" firstAttribute="top" secondItem="vt3-Lx-XM8" secondAttribute="bottom" constant="58" id="qDT-Ay-4sM"/>
+                            <constraint firstItem="t9V-Qb-0pl" firstAttribute="top" secondItem="JM7-6u-1pF" secondAttribute="top" constant="24" id="u45-sX-aoA"/>
+                            <constraint firstItem="t9V-Qb-0pl" firstAttribute="leading" secondItem="uyy-zv-mce" secondAttribute="trailing" constant="15" id="vKM-Sd-2ej"/>
+                            <constraint firstItem="uyy-zv-mce" firstAttribute="leading" secondItem="JM7-6u-1pF" secondAttribute="leading" constant="28" id="vdY-Zy-M52"/>
+                            <constraint firstItem="v1C-1m-2rR" firstAttribute="top" secondItem="ijb-sw-3Xl" secondAttribute="bottom" constant="13" id="yNP-XD-Ufd"/>
+                            <constraint firstItem="nAI-t8-WyE" firstAttribute="top" secondItem="uyy-zv-mce" secondAttribute="bottom" id="ygx-QK-ZZv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JM7-6u-1pF"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7TD-Zq-T9J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="105.79710144927537" y="115.84821428571428"/>
         </scene>
     </scenes>
     <resources>
-        <image name="SliderMin" width="180" height="180"/>
+        <image name="16-20Image" width="205" height="273"/>
+        <image name="rainIcon" width="108" height="108"/>
     </resources>
 </document>
